@@ -20,41 +20,38 @@ class _BodyState extends State<Body> {
     return SafeArea(
       child: Stack(
         children: [
-          Container(
-            color: primary300,
-            child: Column(
-              children: [
-                SizedBox(
+          Column(
+            children: [
+              SizedBox(
+                width: size.width,
+                height: size.height * 0.5,
+              ),
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.only(top: size.height * 0.06),
                   width: size.width,
-                  height: size.height * 0.5,
-                ),
-                Expanded(
-                  child: Container(
-                    padding: EdgeInsets.only(top: size.height * 0.06),
-                    width: size.width,
-                    decoration: const BoxDecoration(
-                        color: neutral100,
-                        borderRadius:
-                            BorderRadius.only(topLeft: Radius.circular(80))),
-                    child: Column(
-                      children: [
-                        SmoothPageIndicator(
-                          controller: controller,
-                          count: 3,
-                          effect: const ExpandingDotsEffect(
-                            spacing: 5,
-                            dotColor: primary300,
-                            activeDotColor: primary300,
-                            dotWidth: 15,
-                            dotHeight: 8,
-                          ),
+                  decoration: const BoxDecoration(
+                      color: neutral100,
+                      borderRadius:
+                          BorderRadius.only(topLeft: Radius.circular(80))),
+                  child: Column(
+                    children: [
+                      SmoothPageIndicator(
+                        controller: controller,
+                        count: 3,
+                        effect: const ExpandingDotsEffect(
+                          spacing: 5,
+                          dotColor: primary300,
+                          activeDotColor: primary300,
+                          dotWidth: 15,
+                          dotHeight: 8,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
           SizedBox(
             width: size.width,

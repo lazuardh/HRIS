@@ -14,17 +14,23 @@ class _LoginState extends State<Login> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset("assets/image/Logo.png"),
+        title: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Container(
+            width: 82,
+            height: 16,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  "assets/images/Logo2.png",
+                ),
+              ),
+            ),
+          ),
+        ),
         backgroundColor: Colors.transparent,
         elevation: 0,
         titleSpacing: 0,
-        title: const Text(
-          "Abskel",
-          style: TextStyle(
-              color: Color(0xffB4950C),
-              fontWeight: FontWeight.bold,
-              fontSize: 16),
-        ),
       ),
       // resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
@@ -114,7 +120,7 @@ class _LoginState extends State<Login> {
                   left: 55,
                   child: Center(
                     child: Image.asset(
-                      "assets/image/girl.png",
+                      "assets/images/girl.png",
                       scale: 1,
                     ),
                   ),

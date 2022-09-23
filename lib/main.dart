@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/screens/navigation/navigation.dart';
 import 'package:flutter_application_1/app/screens/onboarding_screen/onboarding_screen.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const Login(),
-      home: const OnBoardingScreen(),
+      home: const Navigation(),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/app/screens/home_screen/home_karyawan/home_karyawan.dart';
+import 'package:flutter_application_1/app/screens/home_screen/home_admin/home_admin.dart';
 
 void main() {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack,
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeKaryawan(),
+      home: const HomeAdmin(),
     );
   }
 }

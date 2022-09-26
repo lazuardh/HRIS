@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/app/utilities/colors.dart';
-
+import '../build_content_menu.dart';
+import '../build_content_menu.dart';
 import 'build_card_home_page.dart';
-import 'build_content_menu.dart';
 import 'build_notification.dart';
 
-class Body extends StatelessWidget {
-  const Body({Key? key}) : super(key: key);
+class BodyKaryawan extends StatelessWidget {
+  const BodyKaryawan({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class Body extends StatelessWidget {
             BuildCardHomePage(size: size),
             BuildContentMenu(size: size)
           ],
-        )
+        ),
       ],
     );
   }

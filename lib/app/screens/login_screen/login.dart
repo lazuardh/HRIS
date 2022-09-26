@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/app/screens/login/component/login_content.dart';
+
+import 'component/login_content.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);

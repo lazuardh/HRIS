@@ -44,3 +44,7 @@ TextStyle text3(colorText, fontWeight) {
 TextStyle text4(colorText, fontWeight) {
   return TextStyle(color: colorText, fontSize: 12, fontWeight: fontWeight);
 }
+
+TextStyle text5(colorText, fontWeight) {
+  return TextStyle(color: colorText, fontSize: 10, fontWeight: fontWeight);
+}

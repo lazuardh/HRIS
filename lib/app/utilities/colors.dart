@@ -29,3 +29,12 @@ const accentRed500 = Color(0XFFF36A8D);
 const accentRed600 = Color(0XFFEF3967);
 const accentRed700 = Color(0XFFE31247);
 const accentRed800 = Color(0XFFB30E39);
+
+const accentGreen100 = Color(0XFFC2F4D6);
+const accentGreen200 = Color(0XFFBAF3D1);
+const accentGreen300 = Color(0XFFBEEBB4);
+const accentGreen400 = Color(0XFF63E497);
+const accentGreen500 = Color(0XFF1BC65F);
+const accentGreen600 = Color(0XFF15994A);
+const accentGreen700 = Color(0XFF0F6C34);
+const accentGreen800 = Color(0XFF093F1E);

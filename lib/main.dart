@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'app/screens/approval_screen/approval_screen.dart';
+import 'package:flutter_application_1/app/route/page_route.dart';
 
 void main() {
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack,
-      overlays: [SystemUiOverlay.bottom]);
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack,
+  //     overlays: [SystemUiOverlay.bottom]);
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ApprovalScreen(),
+      routes: AppPage.pages,
+      initialRoute: '/',
+      // home: const ApprovalScreen(),
     );
   }
 }

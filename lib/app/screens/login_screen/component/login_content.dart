@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/route/route_name.dart';
 
 class LoginContent extends StatelessWidget {
   const LoginContent({Key? key}) : super(key: key);
@@ -71,7 +72,12 @@ class LoginContent extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    RouteName.navigation,
+                  );
+                },
                 child: Container(
                   alignment: Alignment.center,
                   width: size.width * 0.85,
@@ -82,6 +88,33 @@ class LoginContent extends StatelessWidget {
                   ),
                   child: const Text(
                     "Log In",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    RouteName.homeAdminScreen,
+                  );
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  width: size.width * 0.85,
+                  height: size.height * 0.06,
+                  decoration: BoxDecoration(
+                    color: const Color(0XFFFFE466),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: const Text(
+                    "admin",
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,

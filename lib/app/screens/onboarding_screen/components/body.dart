@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/route/route_name.dart';
 import 'package:flutter_application_1/app/screens/onboarding_screen/components/build_content.dart';
 import 'package:flutter_application_1/app/utilities/colors.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -13,6 +14,12 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   PageController controller = PageController();
   int index = 0;
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +115,10 @@ class _BodyState extends State<Body> {
                   subTitle: 'It uses to absent via scanning',
                 ),
                 BuildContent(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(
+                        context, RouteName.loginScreen);
+                  },
                   size: size,
                   showImages: 'assets/images/Good marketing rises income.png',
                   title: "Let's Get Started",

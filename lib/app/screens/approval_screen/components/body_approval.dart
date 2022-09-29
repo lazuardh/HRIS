@@ -108,7 +108,7 @@ class _BodyApprovalState extends State<BodyApproval> {
           child: SizedBox(
             width: size.width,
             child: ListView.builder(
-                itemCount: 20,
+                itemCount: 1,
                 itemBuilder: (context, index) {
                   return acc.contains(index) == false
                       ? ItemPresensi(

@@ -5,7 +5,7 @@ class NavigationButton extends StatelessWidget {
       {Key? key, required this.icon, required this.onPressed})
       : super(key: key);
 
-  final Icon icon;
+  final Widget icon;
   final void Function()? onPressed;
 
   @override

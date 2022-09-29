@@ -7,6 +7,10 @@ const FontWeight regular = FontWeight.w400;
 
 /// heading size
 
+TextStyle heading(colorText, fontWeight) {
+  return TextStyle(color: colorText, fontSize: 40, fontWeight: fontWeight);
+}
+
 TextStyle heading1(colorText, fontWeight) {
   return TextStyle(color: colorText, fontSize: 25, fontWeight: fontWeight);
 }
@@ -39,4 +43,8 @@ TextStyle text3(colorText, fontWeight) {
 
 TextStyle text4(colorText, fontWeight) {
   return TextStyle(color: colorText, fontSize: 12, fontWeight: fontWeight);
+}
+
+TextStyle text5(colorText, fontWeight) {
+  return TextStyle(color: colorText, fontSize: 10, fontWeight: fontWeight);
 }

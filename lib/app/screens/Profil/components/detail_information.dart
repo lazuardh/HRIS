@@ -40,9 +40,9 @@ class DetailInfo extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Padding(
                     padding: EdgeInsets.only(
                       bottom: 5,
@@ -141,9 +141,9 @@ class DetailInfo extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Padding(
                     padding: EdgeInsets.only(
                       bottom: 5,
@@ -201,9 +201,9 @@ class DetailInfo extends StatelessWidget {
                 color: const Color(0xFFF4452D),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.logout,
                     color: neutral100,

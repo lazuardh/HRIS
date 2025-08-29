@@ -21,9 +21,9 @@ class ProfilScreen extends StatelessWidget {
               color: neutral800,
               height: size.height,
               width: size.width,
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   BuildCircleAvatar(),
                 ],
               ),

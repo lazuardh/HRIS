@@ -15,7 +15,7 @@ class BuildCardHomePage extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       margin: EdgeInsets.symmetric(
-          horizontal: size.width * 0.1, vertical: size.height * 0.03),
+          horizontal: size.width * 0.05, vertical: size.height * 0.03),
       decoration: BoxDecoration(
           color: neutral600, borderRadius: BorderRadius.circular(10)),
       width: size.width,

@@ -26,10 +26,10 @@ class BuildContentMenu extends StatelessWidget {
                     topLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40)),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.pending_actions,
                     size: 50,
@@ -50,10 +50,10 @@ class BuildContentMenu extends StatelessWidget {
                     topRight: Radius.circular(40),
                     bottomLeft: Radius.circular(40)),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.pending_actions,
                     size: 50,
@@ -80,10 +80,10 @@ class BuildContentMenu extends StatelessWidget {
                     topRight: Radius.circular(40),
                     bottomLeft: Radius.circular(40)),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.ballot,
                     size: 50,
@@ -104,10 +104,10 @@ class BuildContentMenu extends StatelessWidget {
                     topLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40)),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.note_alt,
                     size: 50,

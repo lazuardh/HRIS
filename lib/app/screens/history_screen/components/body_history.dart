@@ -27,8 +27,8 @@ class _BodyHistoryState extends State<BodyHistory> {
         empty = const PresentItemHistory();
         break;
       case 'Overtime':
-        empty = Column(
-          children: const [
+        empty = const Column(
+          children: [
             OvertimeItemHistory(buttonType: ButtonAwaiting()),
             OvertimeItemHistory(buttonType: ButtonApproved()),
             OvertimeItemHistory(buttonType: ButtonDecline()),
@@ -36,8 +36,8 @@ class _BodyHistoryState extends State<BodyHistory> {
         );
         break;
       case 'Leave':
-        empty = Column(
-          children: const [
+        empty = const Column(
+          children: [
             ItemHistory(
                 buttonType: ButtonAwaiting(),
                 appliedDuration: '3 Days',
@@ -50,8 +50,8 @@ class _BodyHistoryState extends State<BodyHistory> {
         );
         break;
       case 'Permit':
-        empty = Column(
-          children: const [
+        empty = const Column(
+          children: [
             ItemHistory(
                 buttonType: ButtonAwaiting(),
                 appliedDuration: '1 Days',
